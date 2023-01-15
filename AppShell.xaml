@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SarciniMuncitori.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SarciniMuncitori"
+    Shell.FlyoutBehavior="Disabled"
+    >
+
+    <TabBar>
+        <ShellContent Title="Bine ai venit!" 
+                      ContentTemplate="{DataTemplate local:MainPage}" />
+        
+        <ShellContent Title="Sarcinile Muncitorilor"
+                      ContentTemplate="{DataTemplate local:ListEntryPage}" />
+        <ShellContent Title="Linkuri utile" 
+                      ContentTemplate="{DataTemplate local:AboutPage}" />
+    </TabBar>
+
+</Shell>
